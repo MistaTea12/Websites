@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link rel="shortcut icon" href="favicon.png" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>Tactical Airsoft Arena - Home</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+ <style>
+.alert {
+  padding: 20px;
+  background-color: green;
+  color: white;
+}
+
+.closebtn {
+  margin-left: 15px;
+  color: white;
+  font-weight: bold;
+  float: right;
+  font-size: 22px;
+  line-height: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.closebtn:hover {
+  color: black;
+  }
+  
+  header {
+  position: relative;
+  background-color: black;
+  height: 75vh;
+  min-height: 25rem;
+  width: 100%;
+  overflow: hidden;
+}
+
+header video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: 0;
+  -ms-transform: translateX(-50%) translateY(-50%);
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+}
+
+header .container {
+  position: relative;
+  z-index: 2;
+}
+
+header .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: black;
+  opacity: 0.5;
+  z-index: 1;
+}
+
+@media (pointer: coarse) and (hover: none) {
+  header {
+    background: url('https://source.unsplash.com/XT5OInaElMw/1600x900') black no-repeat center center scroll;
+  }
+  header video {
+    display: none;
+  }
+}
+section.pricing {
+  background: #fff;
+}
+
+.pricing hr {
+  margin: 1.5rem 0;
+}
+
+.pricing .card-title {
+  margin: 0.5rem 0;
+  font-size: 0.9rem;
+  letter-spacing: .1rem;
+  font-weight: bold;
+}
+
+.pricing .card-price {
+  font-size: 3rem;
+  margin: 0;
+}
+
+.pricing .card-price .period {
+  font-size: 0.8rem;
+}
+
+.pricing ul li {
+  margin-bottom: 1rem;
+}
+
+.pricing .text-muted {
+  opacity: 0.7;
+}
+
+.pricing .btn {
+  font-size: 80%;
+  border-radius: 5rem;
+  letter-spacing: .1rem;
+  font-weight: bold;
+  padding: 1rem;
+  opacity: 0.7;
+  transition: all 0.2s;
+}
+.cal {
+	list-style-type: none;
+	padding: 10px;
+	font-size: 20px;
+}
+.days {
+	padding: 5px;
+}
+.daysactive{
+	background-color: #a4c2f2;
+	border-radius: 5px;
+	border-width: 2px;
+
+}
+.right{
+    float:right;
+}
+
+.left{
+    float:left;
+}
+ </style>
+<script>
+function daysTracker(){
+	var day = new Date();
+	document.getElementById(day.getDay().toString()).className = "days daysactive";
+	document.getElementById((day.getDay() + 7).toString()).className = "days daysactive";
+	
+}
+
+</script>
+  <!-- Custom styles for this template -->
+  <link href="css/small-business.css" rel="stylesheet">
+
+</head>
+
+<body onload="daysTracker();">
+<div id="fb-root"></div>
+<script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.3"></script>
+<header>
+  <div class="overlay"></div>
+  <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
+    <source src="TAAtrimmed.mp4" type="video/mp4">
+  </video>
+  <div class="container h-100">
+    <div class="d-flex h-100 text-center align-items-center">
+      <div class="w-100 text-white">
+        <h1 class="display-3">Welcome to Tactical Airsoft Arena</h1>
+        <a href="#content"><p class="lead mb-0">Go to content</p></a>
+      </div>
+    </div>
+  </div>
+</header>
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+      <a href="index.html"><img class="" src="title.jpg" alt="title"></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Home
+              <span class="sr-only">(current)</span>
+            </a>
+          </li>
+		    <li class="nav-item">
+            <a class="nav-link" href="pricing.html">Rentals and Pricing</a>
+          </li>
+		  <li class="nav-item">
+            <a class="nav-link" href="waivers.html">Waivers</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="parties.html">Private Parties</a>
+          </li>
+		  <li class="nav-item">
+            <a class="nav-link" href="events.html">Events</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="faq.html">FAQ</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Page Content -->
+  <div id="content" class="container">
+  <section class="pricing py-5">
+  <div class="container">
+    <div class="row">
+      <!-- Tier -->
+      <div class="col-lg-4">
+        <div class="mb-5 mb-lg-0">
+          <div class="">
+            <h5 class="card-title text-muted text-uppercase text-center">Business Hours</h5>
+            <h6 style = "color:#509348;"class="card-price text-center">Manassas</h6>
+            <hr>
+            <ol class="cal">
+              <li id= "1" class="days"><span class="left">Monday</span><span style="color: red" class="right">CLOSED</span>​</li>
+              <li id= "2" class="days"><span class="left">Tuesday</span><span style="color: red" class="right">CLOSED</span>​</li>
+              <li id= "3" class="days"><span class="left">Wednesday</span><span style="color: #4dbc5d" class="right">6PM-11PM</span>​</li>
+              <li id= "4" class="days"><span class="left">Thursday</span><span style="color: red" class="right">CLOSED</span>​</li>
+              <li id= "5" class="days"><span class="left">Friday</span><span style="color: #4dbc5d" class="right">6PM-11PM</span>​</li>
+              <li id= "6" class="days"><span class="left">Saturday</span><span style="color: #4dbc5d" class="right">2PM-10PM</span>​</li>
+              <li id= "0" class="days"><span class="left">Sunday</span><span style="color: #4dbc5d" class="right">11AM-7PM</span>​</li>
+            </ol>
+          </div>
+        </div>
+      </div>
+      <!-- Tier -->
+	  <div class="col-lg-4">
+        <div class="mb-5 mb-lg-0">
+          <div class="">
+            <h5 class="card-title text-muted text-uppercase text-center">Business Hours</h5>
+            <h6 style = "color:#509348;"class="card-price text-center">Rockville</h6>
+            <hr>
+            <ol class="cal">
+              <li id= "8" class="days"><span class="left">Monday</span><span style="color: red" class="right">CLOSED</span>​</li>
+              <li id= "9" class="days"><span class="left">Tuesday</span><span style="color: red" class="right">CLOSED</span>​</li>
+              <li id= "10" class="days"><span class="left">Wednesday</span><span style="color: red" class="right">CLOSED</span>​</li>
+              <li id= "11" class="days"><span class="left">Thursday</span><span style="color: red" class="right">CLOSED</span>​</li>
+              <li id= "12" class="days"><span class="left">Friday</span><span style="color: #4dbc5d" class="right">6PM-11PM</span>​</li>
+              <li id= "13" class="days"><span class="left">Saturday</span><span style="color: #4dbc5d" class="right">11AM-7PM</span>​</li>
+              <li id= "7" class="days"><span class="left">Sunday</span><span style="color: #4dbc5d" class="right">11AM-7PM</span>​</li>
+            </ol>
+          </div>
+        </div>
+      </div>
+	  <div class="col-md-4 mb-5">
+        <h2>Contact Us</h2>
+        <hr>
+        <address>
+          <strong>Manassas</strong>
+          <br>9508 Center Street
+          <br>Manassas, VA 20110
+          <br>
+        </address>
+        <address>
+          <abbr title="Phone">P:</abbr>
+          (703) 330-0333
+          <br>
+          <abbr title="Email">E:</abbr>
+          <a href="mailto:#">info@tacticalairsoftarena.com</a>
+        </address>
+		        <address>
+          <strong>Rockville</strong>
+          <br>20-B Southlawn Court
+          <br>Rockville, MD 20850
+          <br>
+        </address>
+        <address>
+          <abbr title="Phone">P:</abbr>
+          (301) 838-7474
+          <br>
+          <abbr title="Email">E:</abbr>
+          <a href="mailto:#">info@tacticalairsoftarena.com</a>
+      </div>
+    </div>
+  </div>
+</section>
+<p>*Business hours are subject to change based on weather and holidays. Please call or refer to social media to see any changes to hours.</p>
+    <!-- Heading Row -->
+    <div class="row align-items-center my-5">
+      <div class="col-lg-7">
+        <img class="img-fluid rounded mb-4 mb-lg-0" src="image1.jpg" alt="">
+      </div>
+      <!-- /.col-lg-8 -->
+      <div class="col-lg-5">
+        <h1 class="font-weight-dark">Private Parties Available!</h1>
+        <p>Reserve our entire facility for you and your guests and create a memorable party! Our private party takes place in our 3,600+ square foot non lethal force-on-force arena which was designed to challenge even the most experienced military, police, security and amateur CQC enthusiast teams.</p>
+        <a class="btn btn-primary" href="privateparties.html">Book A Party</a>
+      </div>
+      <!-- /.col-md-4 -->
+    </div>
+
+    </div>
+    </div>
+    <!-- /.row -->
+
+  </div>
+  <!-- /.container -->
+
+  <!-- Footer -->
+  <footer class="py-5 bg-dark">
+    <div class="container">
+      <p class="m-0 text-center text-white">Copyright © Tactical Airsoft, LLC. All rights reserved.</p>
+    </div>
+    <!-- /.container -->
+  </footer>
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>
