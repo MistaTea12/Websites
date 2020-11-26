@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
 	<title>Harvey The Computer</title>
 	<link rel="stylesheet" href="gpa.css">
@@ -7,24 +8,132 @@
 
 <body>
 
-<header>
-	<h1> 
-		<a class='headerlink' href="index.html">Harvey The Computer</a>
-	</h1>
-</header>
+	<div class="topnav">
+		<a class="headerlink" href="index.html">Harvey The Computer</a>
+		<a class="active" href="gpa.html">GPA Calculator</a>
+		<a href="tip.html">Tip Calculator</a>
+		<a href="tax.html">Tax Calculator</a>
+		<a href="game.html">Games</a>
+		<a href="phue.html">Phillips Hue Lighting Control</a>
+	</div>
 
-<nav>
-	<ul>
-	  <li><a href="gpa.html">GPA Calculator</a></li>
-	  <li><a href="tip.html">Tip Calculator</a></li>
-	  <li><a href="tax.html">Tax Calculator</a></li>
-	</ul>
-</nav>
-
-<img src='computron.jpg' alt='computron pic'> <p> I am Harvey, a computer. Jim sucks. </p>
-
-<footer>
-	Created by Tyler Gassan
-</footer>
+	<div class="row">
+		<div class="column" style="background-color:#aaa;">
+			<form id='1'>
+				<h3>Class 1</h3>
+				<input type="text" id="grade1a" name="grade1" value="0"><br>
+				<input type="text" id="grade2a" name="grade2" value="0"><br>
+				<input type="text" id="grade3a" name="grade3" value="0"><br>
+				<input type="text" id="grade4a" name="grade4" value="0"><br>
+				<input type="text" id="grade5a" name="grade5" value="0"><br>
+				<input type="text" id="grade6a" name="grade6" value="0"><br>
+				<input type="text" id="grade7a" name="grade7" value="0"><br>
+				<p>Weight: </p><input type="text" id="weight" name="weight1" value="0"><br>
+				<p>Grade: </p>
+				<p id='result1'></p>
+			</form>
+		</div>
+		<div class="column" style="background-color:rgb(131, 130, 130);">
+			<form id='2'>
+				<h3>Class 2</h3>
+				<input type="text" id="grade1b" name="grade1" value="0"><br>
+				<input type="text" id="grade2b" name="grade2" value="0"><br>
+				<input type="text" id="grade3b" name="grade3" value="0"><br>
+				<input type="text" id="grade4b" name="grade4" value="0"><br>
+				<input type="text" id="grade5b" name="grade5" value="0"><br>
+				<input type="text" id="grade6b" name="grade6" value="0"><br>
+				<input type="text" id="grade7b" name="grade7" value="0"><br>
+				<p>Weight: </p><input type="text" id="weight" name="weight2" value="0"><br>
+				<p>Grade: </p>
+				<p id='result2'></p>
+			</form>
+		</div>
+		<div class="column" style="background-color:#aaa;">
+			<form id='3'>
+				<h3>Class 3</h3>
+				<input type="text" id="grade1c" name="grade1" value="0"><br>
+				<input type="text" id="grade2c" name="grade2" value="0"><br>
+				<input type="text" id="grade3c" name="grade3" value="0"><br>
+				<input type="text" id="grade4c" name="grade4" value="0"><br>
+				<input type="text" id="grade5c" name="grade5" value="0"><br>
+				<input type="text" id="grade6c" name="grade6" value="0"><br>
+				<input type="text" id="grade7c" name="grade7" value="0"><br>
+				<p>Weight: </p><input type="text" id="weight" name="weight3" value="0"><br>
+				<p>Grade: </p>
+				<p id='result3'></p>
+			</form>
+		</div>
+		<div class="column" style="background-color:rgb(131, 130, 130);">
+			<form id='4'>
+				<h3>Class 4</h3>
+				<input type="text" id="grade1d" name="grade1" value="0"><br>
+				<input type="text" id="grade2d" name="grade2" value="0"><br>
+				<input type="text" id="grade3d" name="grade3" value="0"><br>
+				<input type="text" id="grade4d" name="grade4" value="0"><br>
+				<input type="text" id="grade5d" name="grade5" value="0"><br>
+				<input type="text" id="grade6d" name="grade6" value="0"><br>
+				<input type="text" id="grade7d" name="grade7" value="0"><br>
+				<p>Weight: </p><input type="text" id="weight" name="weight4" value="0"><br>
+				<p>Grade: </p>
+				<p id='result4'></p>
+			</form>
+		</div>
+		<div class="column" style="background-color:#aaa;">
+			<form id='5'>
+				<h3>Class 5</h3>
+				<input type="text" id="grade1e" name="grade1" value="0"><br>
+				<input type="text" id="grade2e" name="grade2" value="0"><br>
+				<input type="text" id="grade3e" name="grade3" value="0"><br>
+				<input type="text" id="grade4e" name="grade4" value="0"><br>
+				<input type="text" id="grade5e" name="grade5" value="0"><br>
+				<input type="text" id="grade6e" name="grade6" value="0"><br>
+				<input type="text" id="grade7e" name="grade7" value="0"><br>
+				<p>Weight: </p><input type="text" id="weight" name="weight5" value="0"><br>
+				<p>Grade: </p>
+				<p id='result5'></p>
+			</form>
+		</div>
+		<div class="column" style="background-color:rgb(131, 130, 130);">
+			<form id='6'>
+				<h3>Class 6</h3>
+				<input type="text" id="grade1f" name="grade1" value="0"><br>
+				<input type="text" id="grade2f" name="grade2" value="0"><br>
+				<input type="text" id="grade3f" name="grade3" value="0"><br>
+				<input type="text" id="grade4f" name="grade4" value="0"><br>
+				<input type="text" id="grade5f" name="grade5" value="0"><br>
+				<input type="text" id="grade6f" name="grade6" value="0"><br>
+				<input type="text" id="grade7f" name="grade7" value="0"><br>
+				<p>Weight: </p><input type="text" id="weight" name="weight6" value="0"><br>
+				<p>Grade: </p>
+				<p id='result6'></p>
+			</form>
+		</div>
+		<div class="column" style="background-color:#aaa;">
+			<form id='7'>
+				<h3>Class 7</h3>
+				<input type="text" id="grade1g" name="grade1" value="0"><br>
+				<input type="text" id="grade2g" name="grade2" value="0"><br>
+				<input type="text" id="grade3g" name="grade3" value="0"><br>
+				<input type="text" id="grade4g" name="grade4" value="0"><br>
+				<input type="text" id="grade5g" name="grade5" value="0"><br>
+				<input type="text" id="grade6g" name="grade6" value="0"><br>
+				<input type="text" id="grade7g" name="grade7" value="0"><br>
+				<p>Weight: </p><input type="text" id="weight" name="weight7" value="0"><br>
+				<p>Grade: </p>
+				<p id='result7'></p>
+			</form>
+		</div>
+	</div>
+	<div class='sub'>
+		<button onclick='calculateGPA()'>Calculate</button><br>
+		<p>Overall Weighted GPA: </p>
+		<p class = 'gpa' id='gpa'>00.00</p><br>
+		
+	</div>
+	<footer>
+		Created by Tyler Gassan
+	</footer>
 </body>
+<script src="gpa.js"></script>
+
 </html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Harvey The Computer</title>
+	<link rel="stylesheet" href="game.css">
+</head>
+
+<body>
+
+<div class="topnav">
+	<a class="headerlink" href="index.html">Harvey The Computer</a>
+	<a href="gpa.html">GPA Calculator</a>
+	<a href="tip.html">Tip Calculator</a>
+	<a href="tax.html">Tax Calculator</a>
+	<a class="active" href="game.html">Games</a>
+	<a href="phue.html">Phillips Hue Lighting Control</a>
+</div>
+<h2>Prison Mike Escape Game</h2>
+<div class='content'>
+    <button class= 'start' onclick="startGame()">Start Game</button>
+    <button class= 'gameButton' id='gameButton' style="display:none;" onmousedown="accelerate(-0.1)" onmouseup="accelerate(0.07)">Rise</button>
+</div>
+<h2>Soccer Goal Game</h2>
+<div class='content'>
+    <button class= 'start' onclick="startSoccer()">Start Game</button>
+    <button class= 'gameButton' id='gameButton' style="display:none;" onmousedown="accelerate(-0.1)" onmouseup="accelerate(0.07)">Rise</button>
+</div>
+
+<footer>
+	Created by Tyler Gassan
+</footer>
+</body>
+
+<script src='game.js'></script>
+<script src='soccer.js'></script>
+</html>

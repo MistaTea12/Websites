@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Harvey The Computer</title>
+	<link rel="stylesheet" href="gpa.css">
+</head>
+
+<body>
+<div class="topnav">
+	<a class="headerlink" href="index.html">Harvey The Computer</a>
+	<a href="gpa.html">GPA Calculator</a>
+	<a href="tip.html">Tip Calculator</a>
+	<a href="tax.html">Tax Calculator</a>
+	<a href="game.html">Games</a>
+	<a class="active" href="phue.html">Phillips Hue Lighting Control</a>
+</div>
+
+<div class='content'>
+	<input type="button" id='script' name="scriptbutton" value=" Run Script " onclick="goPython()">
+</div>
+
+<footer>
+	Created by Tyler Gassan
+</footer>
+</body>
+
+
+<script src="http://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+
+<script>
+	function goPython(){
+		$.ajax({
+            type:"GET",
+            url:"/phue_control.py",
+            contentType:"application/json; charset=utf-8",
+            success:function (data) { 
+				myAPI()   
+            },
+            failure:function (errMsg) {
+            }
+        });
+	}
+</script>
+
+</html>

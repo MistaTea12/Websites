@@ -1,3 +1,17 @@
+canvas {
+    border:1px solid #d3d3d3;
+    background-color: #f1f1f1;
+    
+}
+.gameButton{
+    font-size: 25px;
+    padding-left: 50px;
+    padding-right: 50px;
+    color: red;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+}
+
 * {
 	box-sizing: border-box;
 	font-family:  Lucida Sans Unicode;
@@ -99,23 +113,13 @@ footer{
   padding: auto;
   margin: 5px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  border-radius: 30px;
-  border-width: 2px;
-  border-style: dotted;
-  border-color: #45484d;
-}
-.column input{
-	border-radius: 5px;
-	border-style: inset;
-	border-width: 3px;
-	text-align: center;
-	border-color: #c8cbce;
+  border-radius: 5px;
 }
 .row{
 	padding: 10px;
 }
 .row input{
-	width: 75%;
+	width: 50%;
 }
 .row:after {
   content: "";

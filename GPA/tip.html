@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Harvey The Computer</title>
+	<link rel="stylesheet" href="gpa.css">
+</head>
+
+<body>
+
+	<div class="topnav">
+		<a class="headerlink" href="index.html">Harvey The Computer</a>
+		<a href="gpa.html">GPA Calculator</a>
+		<a class="active" href="tip.html">Tip Calculator</a>
+		<a href="tax.html">Tax Calculator</a>
+		<a href="game.html">Games</a>
+		<a href="phue.html">Phillips Hue Lighting Control</a>
+	</div>
+
+	<div class="row">
+		<div class="column" style="background-color:#aaa;">
+			<form id='1'>
+				<h3>Bill</h3>
+				<p>Cost: </p><input type="text" id="cost" name="grade1" value=""><br>
+				<p>Tip(%): </p><input type="text" id="tip" name="weight1" value=""><br>
+				<p># of people: </p><input style="width: 50px;" type="text" id="people" name="people" value="1"><br>
+				<div style="margin: 20px;">
+					<p>Added Tip: </p>
+					<p id='resultTip'></p>
+				</div>
+				
+				
+            </form>
+            <div class='sub'>
+                <button onclick='calculateTip()'>Calculate</button><br>
+                <p>Total: </p>
+				<p class = 'gpa' id='total'>00.00</p><br>
+				<p>Per person: </p>
+                <p id='perPerson'>00.00</p><br>
+                
+            </div>
+		</div>
+	</div>
+	<footer>
+		Created by Tyler Gassan
+	</footer>
+</body>
+<script src="tip.js"></script>
+
+</html>
